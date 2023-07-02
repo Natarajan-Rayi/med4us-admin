@@ -315,14 +315,14 @@
        document.getElementById("admin-email").innerHTML = localStorage.getItem("admin_email")
        document.getElementById("admin-name").innerHTML = localStorage.getItem("admin_name")
           
-       fetch("http://localhost:5001/dashboard-count")
+       fetch("https://med4us-api.onrender.com/dashboard-count")
          .then(response => response.json())
          .then(data => {
            console.log(data);
            document.getElementById("icon-lead-count").innerHTML = data.lead_count
            document.getElementById("msg-lead-count").innerHTML = data.lead_count
          })
-  fetch("http://localhost:5001/lead-msg")
+  fetch("https://med4us-api.onrender.com/lead-msg")
       .then(response => response.json())
       .then(data => {
         console.log(data);
