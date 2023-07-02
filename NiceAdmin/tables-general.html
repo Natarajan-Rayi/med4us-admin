@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Tables / General - NiceAdmin Bootstrap Template</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: NiceAdmin
+  * Updated: May 30 2023 with Bootstrap v5.3.0
+  * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="dashboard.html" class="logo d-flex align-items-center">
+        <img src="assets/img/logo.png" alt="">
+        <span class="d-none d-lg-block">Med4us</span>
+      </a>
+      <i class="bi bi-list toggle-sidebar-btn"></i>
+    </div><!-- End Logo -->
+
+    <div class="search-bar">
+      <form class="search-form d-flex align-items-center" method="POST" action="#">
+        <input type="text" name="query" placeholder="Search" title="Enter search keyword">
+        <button type="submit" title="Search"><i class="bi bi-search"></i></button>
+      </form>
+    </div><!-- End Search Bar -->
+
+    <nav class="header-nav ms-auto">
+      <ul class="d-flex align-items-center">
+
+        <li class="nav-item d-block d-lg-none">
+          <a class="nav-link nav-icon search-bar-toggle " href="#">
+            <i class="bi bi-search"></i>
+          </a>
+        </li><!-- End Search Icon-->
+<li class="nav-item dropdown">
+
+  <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+    <i class="bi bi-bell"></i>
+    <span class="badge bg-primary badge-number" id="icon-lead-count"></span>
+  </a><!-- End Notification Icon -->
+
+  <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
+    <li class="dropdown-header">
+      You have <span id="msg-lead-count"></span> new leads
+      <a href="tables-general.html"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
+    </li>
+    <!-- <li>
+      <hr class="dropdown-divider">
+    </li> -->
+
+    <ul id="notification-list">
+      <li>
+        <hr class="dropdown-divider">
+      </li>
+    </ul>
+
+<!-- 
+    <li>
+      <hr class="dropdown-divider">
+    </li> -->
+
+    <li>
+      <hr class="dropdown-divider">
+    </li>
+    <li class="dropdown-footer">
+      <a href="tables-general.html">Show all leads</a>
+    </li>
+
+  </ul><!-- End Notification Dropdown Items -->
+
+</li><!-- End Notification Nav -->
+
+        <!-- <li class="nav-item dropdown">
+
+          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+            <i class="bi bi-chat-left-text"></i>
+            <span class="badge bg-success badge-number">3</span>
+          </a>
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages">
+            <li class="dropdown-header">
+              You have 3 new messages
+              <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="message-item">
+              <a href="#">
+                <img src="assets/img/messages-1.jpg" alt="" class="rounded-circle">
+                <div>
+                  <h4>Maria Hudson</h4>
+                  <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                  <p>4 hrs. ago</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="message-item">
+              <a href="#">
+                <img src="assets/img/messages-2.jpg" alt="" class="rounded-circle">
+                <div>
+                  <h4>Anna Nelson</h4>
+                  <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                  <p>6 hrs. ago</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="message-item">
+              <a href="#">
+                <img src="assets/img/messages-3.jpg" alt="" class="rounded-circle">
+                <div>
+                  <h4>David Muldon</h4>
+                  <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                  <p>8 hrs. ago</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="dropdown-footer">
+              <a href="#">Show all messages</a>
+            </li>
+
+          </ul>
+
+        </li>End Messages Nav -->
+
+        <li class="nav-item dropdown pe-3">
+
+          <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+            <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
+            <span class="d-none d-md-block dropdown-toggle ps-2" id="admin-name-show"></span>
+          </a><!-- End Profile Iamge Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+            <li class="dropdown-header">
+              <h6 id="admin-name"></h6>
+              <span id="admin-email"></span>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a onclick="signOut()" class="dropdown-item d-flex align-items-center" >
+                <i class="bi bi-box-arrow-right"></i>
+                <span>Sign Out</span>
+              </a>
+            </li>
+
+          </ul><!-- End Profile Dropdown Items -->
+        </li><!-- End Profile Nav -->
+
+      </ul>
+    </nav><!-- End Icons Navigation -->
+
+  </header><!-- End Header -->
+
+  <!-- ======= Sidebar ======= -->
+  <aside id="sidebar" class="sidebar">
+
+    <ul class="sidebar-nav" id="sidebar-nav">
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="dashboard.html">
+          <i class="bi bi-grid"></i>
+          <span>Dashboard</span>
+        </a>
+      </li><!-- End Dashboard Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link " data-bs-target="#tables-nav">
+          <i class="bi bi-layout-text-window-reverse"></i><span>Leads</span>
+        </a>
+      </li><!-- End Tables Nav -->
+
+    </ul>
+
+  </aside><!-- End Sidebar-->
+
+  <main id="main" class="main">
+
+    <div class="pagetitle">
+      <h1>Lead Tables</h1>
+      <nav>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item">Tables</li>
+          <li class="breadcrumb-item active">Leads</li>
+        </ol>
+      </nav>
+    </div><!-- End Page Title -->
+
+    <section class="section">
+      <div class="row">
+        <div class="col-lg-12">
+
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Lead Message Table</h5>
+
+              <!-- Default Table -->
+              <table class="table" id="leadTable">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Mobile number</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Message</th>
+                    <th scope="col">Date</th>
+                  </tr>
+                </thead>
+                <tbody>
+    
+                </tbody>
+              </table>
+              <!-- End Default Table Example -->
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="copyright">
+      &copy; Copyright <strong><span>Med4us</span></strong>. All Rights Reserved
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/chart.js/chart.umd.js"></script>
+  <script src="assets/vendor/echarts/echarts.min.js"></script>
+  <script src="assets/vendor/quill/quill.min.js"></script>
+  <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-analytics.js"></script>
+<script src="https://accounts.google.com/gsi/client" async defer></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+<script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyClCt4XmrhJz_V3cziaz6hyJL7LKTb-dvI",
+            authDomain: "med4us-website.firebaseapp.com",
+            projectId: "med4us-website",
+            storageBucket: "med4us-website.appspot.com",
+            messagingSenderId: "1072912700959",
+            appId: "1:1072912700959:web:e85ca436bb499479e1672a",
+            measurementId: "G-8P3595ZYSZ"
+          };
+
+          // Initialize Firebase
+          firebase.initializeApp(firebaseConfig);
+  window.onload=function(){
+     if (localStorage.getItem("admin_status") === "true") {
+           document.getElementById("admin-name-show").innerHTML = localStorage.getItem("admin_name")
+       document.getElementById("admin-email").innerHTML = localStorage.getItem("admin_email")
+       document.getElementById("admin-name").innerHTML = localStorage.getItem("admin_name")
+          
+       fetch("http://localhost:5001/dashboard-count")
+         .then(response => response.json())
+         .then(data => {
+           console.log(data);
+           document.getElementById("icon-lead-count").innerHTML = data.lead_count
+           document.getElementById("msg-lead-count").innerHTML = data.lead_count
+         })
+  fetch("http://localhost:5001/lead-msg")
+      .then(response => response.json())
+      .then(data => {
+        console.log(data);
+        // Assuming you have a Bootstrap table with id "leadTable"
+        const table = document.getElementById("leadTable");
+
+        data.message.forEach(message => {
+          const row = table.insertRow();
+          const cell1 = row.insertCell();
+          const cell2 = row.insertCell();
+          const cell3 = row.insertCell();
+          const cell4 = row.insertCell();
+          const cell5 = row.insertCell();
+          const cell6 = row.insertCell()
+          cell1.innerHTML = message.user_name; // Replace "field1" with your actual field name
+          cell2.innerHTML = message.user_number; // Replace "field2" with your actual field name
+          cell3.innerHTML = message.user_number; // Replace "field2" with your actual field name
+          cell4.innerHTML = message.user_email; // Replace "field2" with your actual field name
+          cell5.innerHTML = message.user_message;
+          cell6.innerHTML = new Date(message.submit_date).toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+          });
+        });
+        // Notification list insertion
+        for (let i = 0; i < 2 && i < data.message.length; i++) {
+          const message = data.message[i];
+
+          // Create the HTML elements
+          const listItem = document.createElement("li");
+          const notificationItem = document.createElement("li");
+          const icon = document.createElement("i");
+          const contentDiv = document.createElement("div");
+          const title = document.createElement("h4");
+          const messageText = document.createElement("p");
+          const submitDate = document.createElement("p");
+
+          // Set the classes for the HTML elements
+          listItem.innerHTML = "<hr class='dropdown-divider'>";
+          notificationItem.className = "notification-item";
+          icon.className = "bi bi-exclamation-circle text-warning";
+
+          // Set the content for the HTML elements
+          title.textContent = message.user_name;
+          messageText.textContent = message.user_message;
+          submitDate.textContent = new Date(message.submit_date).toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+          });
+
+          // Append the elements to the parent elements
+          contentDiv.appendChild(title);
+          contentDiv.appendChild(messageText);
+          contentDiv.appendChild(submitDate);
+          notificationItem.appendChild(icon);
+          notificationItem.appendChild(contentDiv);
+
+          // Append the items to the notification list
+          const notificationList = document.getElementById("notification-list");
+          notificationList.appendChild(listItem);
+          notificationList.appendChild(notificationItem);
+        }
+
+      })
+      .catch(error => {
+        console.error(error);
+      });
+       
+    }else{
+        window.location.href = "/"
+    }
+  }
+
+function signOut(){
+  firebase.auth().signOut().then(() => {
+    // Sign-out successful.
+    window.location.href="/"
+  }).catch((error) => {
+    // An error happened.
+  });
+}
+</script>
+</body>
+
+</html>
